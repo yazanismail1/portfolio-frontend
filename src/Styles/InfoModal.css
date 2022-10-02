@@ -1,0 +1,16 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navigationKeys {
+    width: 50px;
+}
+
+.ModalBody {
+    line-height: 2;
+}
+
+#ModalHeader {
+    /* font-family: 'Merriweather', serif; */
+    font-weight: 600;
+}

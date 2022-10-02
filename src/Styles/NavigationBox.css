@@ -1,0 +1,116 @@
+#visibilityOn {
+    visibility: visible;   
+}  
+
+#visibilityOff {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    position: absolute;
+}
+
+.wrapper {
+    transition: 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2C3639;
+    position: relative;
+    perspective: 500px;    
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+#afterZoomOut { 
+    width: 10em;
+    height: 10em;  
+    
+    margin: 0;
+    
+}
+
+.cube {
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    transform: rotateX(-25deg) rotateY(-20deg);
+    animation:  spin 10s infinite linear;
+
+}
+
+.cube div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    vertical-align: middle;
+    flex-direction: column;
+}
+
+.cube div p {
+    transform: scale(2.5);
+    padding-top: 5px;
+}
+
+.HomePage, .AboutMe, .MyWork, .ContactMe, .ceiling, .bottomFloor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:	hsl(182, 26%, 72%, 75%);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.HomePage {
+    transform:  rotateY(0deg) translateZ(5em);
+    /* background-color: red; */
+}
+
+.AboutMe {
+    transform: rotateY(90deg) translateZ(5em);
+    /* background-color: blue; */
+}
+
+.MyWork {
+    transform: rotateY(-90deg) translateZ(5em);
+    /* background-color: red; */
+}
+
+.ContactMe {
+    transform: rotateY(-180deg) translateZ(5em);
+}
+
+.ceiling {
+    transform: rotateX(90deg) translateZ(5em);
+}
+
+.bottomFloor {
+    transform: rotateX(-90deg) translateZ(5em);
+}
+
+@keyframes spin {
+    from {
+        transform: rotateX(0deg) rotateY(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg) rotateY(360deg);
+    }
+}
+
+.floor {
+    position: absolute;
+    bottom: 0;
+    transform: 
+    translate(0%, 14%)
+    rotateX(90deg);
+    width: 50%;
+    height: 40em;
+    background-image: repeating-conic-gradient(
+        from 45deg,
+        #2C3639 0deg 90deg,
+        #3F4E4F 90deg 180deg);
+    background-size: 2em 2em;
+    z-index: -1;
+    transform-style: preserve-3d;
+}

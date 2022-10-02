@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+
+
+#VisibilityOn {
+    visibility: visible;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#VisibilityOff {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.fullScreen {
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content:center;
+    height: 100vh;
+    width: 100%;
+    font-size: 18px;
+    color: #2C3333;   
+    padding: 0 15%; 
+    margin: 0;
+}
+
+.img {
+    width: 100%;
+}
+
+.img img {
+    transform: rotateX(180deg);
+}
+
+.selfIntro {
+    padding-top: 9.8em;
+    text-align: justify;
+    width: 100%;
+}
+
+.selfIntro h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    color: #E7F6F2;
+    background-color: #395B64;
+    width: fit-content;
+    padding: 0 5% 0 1%;
+    margin-bottom: 15px;
+}
+
+.selfIntro p {
+    width: 100%;
+    line-height: 1.5;
+    margin: 0;
+}
+
+#name {
+    padding: 30px 0 8px;
+    position: relative;
+    z-index: 1;
+}
+
+#name::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 7px;
+    width: 125px;
+    height: 14px;
+    transform: skew(-12deg) translateX(-50%);
+    background: hsl(182, 26%, 72%,75%);
+    z-index: -1;
+  }
+
+  #job {
+    padding: 30px 0 8px;
+    position: relative;
+    z-index: 1;
+}
+
+#job::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 7px;
+    width: 85px;
+    height: 14px;
+    transform: skew(-12deg) translateX(-50%);
+    background: hsl(182, 26%, 72%,75%);
+    z-index: -1;
+  }
+
+em {
+    text-decoration: underline;
+}
+
+.getInTouchButton {
+    padding: 7px 15px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #395B64;
+    border: 2px solid #395B64;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+}
+
+
+.Scribble img {
+    position: absolute;
+    width: 170px;
+    height: 150px;
+    left: 420px;
+    top:360px;
+    transform: rotateZ(-15deg);
+}
+
+.Scribble .getInTouchButton {
+    position: absolute;
+    left: 630px;
+    top:450px;
+    width: max-content;
+    /* transform: rotateZ(-15deg); */
+}
+
+.getInTouchButton:hover {
+    background-color: #395B64;
+    color: #E7F6F2;
+    border: 2px solid #395B64;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#Off {
+    visibility: hidden;
+    width:0;
+    height:0;
+    transition: 0.5s ease-in-out;
+}
+
+#On {
+    visibility: visible;
+    transition: 0.5s ease-in-out;
+}
+
+.handbook {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    bottom: 10px;
+    right: 15px;
+}
+
+.handbook:hover {
+    cursor: pointer;
+}
+
+.verticalLine {
+    /* border: 10px solid rgb(0, 0, 0); */
+    height: 50px;
+    border-left: 5px dotted #395B64;
+    z-index: 1;
+    margin-bottom: 6%;
+
+}
+
+.socialInfo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+    left: 2%;
+    bottom: 0;
+}
+
+.socialIcons {
+    width: 40px;
+}
