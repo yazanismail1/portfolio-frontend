@@ -13,13 +13,14 @@ class NavigationModal extends React.Component {
             <Modal
             size="xl"
             show={this.props.show}
-        dialogClassName="modal-90w"
+        dialogClassName="modal-90w change-style"
         aria-labelledby="example-custom-modal-styling-title"
         centered
         
+        
       >
         <Modal.Body id="navigation" >
-        <Navbar collapseOnSelect expand="lg">
+        <Navbar collapseOnSelect expand="xl">
         <Container>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

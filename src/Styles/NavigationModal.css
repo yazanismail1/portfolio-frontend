@@ -17,6 +17,16 @@
  }  */
 
  #navitems:hover {
-    box-shadow: rgba(0, 0, 0, 1) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
+    box-shadow: rgba(255,255,255, 1) 0px 1px 4px, rgb(255, 255, 255) 0px 0px 0px 3px;
  }
 
+.change-style .modal-content{
+    background-color: 	hsl(0, 0%, 0%, 75%);
+    border-radius: 0;
+    width: 100%;
+}
+
+.change-style .modal-content #navitems .titleTab{
+    color: white;
+    font-weight: 400;
+}

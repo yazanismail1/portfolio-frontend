@@ -1,0 +1,111 @@
+.outterWrapper {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.backButton {
+    width: 35px;
+    padding: 1%;
+}
+
+.backButton button {
+    background-color: transparent;
+    border: none;
+    width: 35px
+}
+
+.backButton img {
+    width: 35px
+}
+
+.innerWrapper {
+    padding: 0 15%;
+}
+
+.innerWrapper h2 {
+    /* font-family: 'Merriweather', serif; */
+    background-color: #E7F6F2;
+    transition: 0.5s ease-in-out;
+    padding: 0 15% 0.4% 1%;
+    letter-spacing: 3px;
+    width: fit-content;
+    color: #2C3333;
+}
+
+.innerWrapper h2:hover {
+    /* font-family: 'Merriweather', serif; */
+    background-color: #2C3333;
+    transition: 0.5s ease-in-out;
+    padding: 0 15% 0.4% 1%;
+    letter-spacing: 3px;
+    width: fit-content;
+    color: #E7F6F2;
+}
+
+.myworksection div img {
+    width:100%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.ProjectImg {
+    width: 100%;
+}
+
+.ProjectDesc {
+    width: 100%;
+}
+
+.ProjectDesc h3 {
+    color: #395B64;
+}
+
+.ProjectDesc p {
+    text-align: justify;
+}
+
+.myworksection {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 25px;
+
+    padding: 25px 0;
+}
+
+.moreLinks {
+    display: flex;
+    gap: 15px
+}
+
+@media only screen and (max-width: 900px) {
+    .myworksection {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    
+        padding: 25px 0;
+    }
+}
+
+/* .nav-item {
+    height: 65px;
+} */
+
+#tabsfilter {
+    color: #395B64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 101%;
+    border-bottom: none;
+}
+
+#tabsfilter:hover {
+    color: #2C3333;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 101%;
+    border-bottom: none;
+}
+

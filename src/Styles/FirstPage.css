@@ -148,10 +148,12 @@ em {
 #On {
     visibility: visible;
     transition: 0.5s ease-in-out;
+    position: fixed;
+    bottom: 0;
 }
 
 .handbook {
-    position: absolute;
+    position: fixed;
     width: 50px;
     height: 50px;
     background-color: transparent;
@@ -170,11 +172,15 @@ em {
     border-left: 5px dotted #395B64;
     z-index: 1;
     margin-bottom: 6%;
+    bottom: 0;
 
 }
-
+#SOCIAL {
+    position: fixed;
+    bottom: 0;
+}
 .socialInfo {
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,4 +193,115 @@ em {
 
 .socialIcons {
     width: 40px;
+}
+
+@media only screen and (max-width: 1020px) {
+    
+    .fullScreen {
+        font-family: 'Open Sans', sans-serif;
+        display: block;
+        justify-content:center;
+        width: 100%;
+        font-size: 18px;
+        color: #2C3333;   
+        padding: 0 15%; 
+        margin: 0;
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+
+    }
+    
+    .img img {
+        transform: rotateX(180deg);    
+    }
+
+    .selfIntro {
+        text-align: justify;
+        padding-top: 0;
+    }
+    
+    .selfIntro h2 {
+        font-family: 'Merriweather', serif;
+        font-size: 16px;
+        letter-spacing: 3px;
+        font-weight: 200;
+        color: #E7F6F2;
+        background-color: #395B64;
+    }
+    
+    .selfIntro p {
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    .getInTouchButton {
+        padding: 7px 15px;
+        font-size: 16px;
+        background-color: transparent;
+        color: #395B64;
+        border: 2px solid #395B64;
+        border-radius: 5px;
+        font-weight: 700;
+        transition: 0.5s ease-in-out;
+    }
+    
+    
+    .Scribble img {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    
+    .Scribble .getInTouchButton {
+        width: max-content;
+        position:static;
+        margin: 3% 0;
+        /* transform: rotateZ(-15deg); */
+    }
+
+    .handbook {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        bottom: 10px;
+        right: 15px;
+    }
+    
+    .handbook:hover {
+        cursor: pointer;
+    }
+    
+    .verticalLine {
+        /* border: 10px solid rgb(0, 0, 0); */
+        height: 50px;
+        border-left: 5px dotted #395B64;
+        z-index: 1;
+        margin-bottom: 6%;
+    
+    }
+    
+    .socialInfo {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 10px;
+        left: 2%;
+        bottom: 0;
+    }
+    
+    .socialIcons {
+        width: 40px;
+    }
+    
+
+    
 }

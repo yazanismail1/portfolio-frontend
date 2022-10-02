@@ -2,3 +2,21 @@
     margin:0;
     padding:0;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #A5C9CA; 
+    border-radius: 25px;
+    transition: 0.5s ease-in-out;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #395B64; 
+    transition: 5s ease-in-out;
+  }
