@@ -3,17 +3,19 @@ import Footer from './Footer';
 import Header from './Header';
 
 
-class ContactMe extends React.Component{
+
+
+class Blog extends React.Component{
     
   render(){
     return(
-      <div>
-      <Header />
-      <Footer />
+        <div>
+          <Header />
+          <Footer />
 
-    </div>
+        </div>
     )
   }
 }
 
-export default ContactMe;
+export default Blog;

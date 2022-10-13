@@ -1,0 +1,29 @@
+#navigation1 {
+    background-color: white;
+    
+    height: 75px;
+    margin-bottom: 10px;
+    padding: 0 25px;
+}
+
+#logo {
+    letter-spacing: 3px;
+    color:#2C3333;
+    font-weight: 700;
+
+}
+
+#navitems1 {
+    color:#2C3333;
+    font-weight: 400;
+}
+
+#navitems1:hover {
+    color:#2C3333;
+    font-weight: 700;
+}
+
+.boarderYes {
+    border-bottom: 2.5px solid #395B64;
+    transition: 0.5s ease-in-out;
+}

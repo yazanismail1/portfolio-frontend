@@ -5,18 +5,19 @@
 
 /* width */
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 11px;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #A5C9CA; 
+    background: #395B64; 
     border-radius: 25px;
     transition: 0.5s ease-in-out;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #395B64; 
+    background: #A5C9CA; 
     transition: 5s ease-in-out;
   }
+

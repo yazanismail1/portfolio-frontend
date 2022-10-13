@@ -1,4 +1,7 @@
 import React from 'react';
+import Footer from './Footer';
+import Header from './Header';
+
 
 
 
@@ -6,7 +9,11 @@ class AboutMe extends React.Component{
     
   render(){
     return(
-        <div className={this.props.class_name}></div>
+        <div>
+          <Header />
+          <Footer />
+
+        </div>
     )
   }
 }

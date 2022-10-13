@@ -1,0 +1,21 @@
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+    background-color: #E7F6F2;
+    align-items: center;
+
+}
+
+#footer p {
+    margin: 0;
+}
+
+#SOCIALF {
+    display: flex;
+    gap: 10px;
+}
+
+#socialIconsF {
+    width:30px;
+}

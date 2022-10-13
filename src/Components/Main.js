@@ -11,6 +11,19 @@ class Main extends React.Component {
             showNavigationModal:false
         }
         document.addEventListener("keydown", this.handleClick, true);
+        document.addEventListener("click", this.close, true);
+    }
+
+    shownavigation = () => {
+      this.setState({
+        showNavigationModal:true
+      })
+    }
+
+    close = () => {
+      this.setState({
+        showNavigationModal:false
+      })
     }
 
     handleClick = (e) => {
@@ -19,7 +32,7 @@ class Main extends React.Component {
                 showNavigationModal:true
             })
             console.log(e.key)
-        } else if(e.key === "w" || e.key === "W") {
+        } else {
             this.setState({
                 showNavigationModal:false
 
@@ -38,7 +51,8 @@ class Main extends React.Component {
         <NavigationModal 
       show={this.state.showNavigationModal}
       />
-        </>
+      <a href="#" onClick={this.shownavigation} style={{position:"absolute", top:"0", left:"0", width:"75px", height:"75px"}}></a>
+      </>
     );
   }
 }

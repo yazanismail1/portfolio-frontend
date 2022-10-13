@@ -10,6 +10,7 @@ import ContactMe from './Components/ContactMe'
 import MyWork from './Components/MyWork'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Blog from './Components/Blog';
 
 class App extends React.Component {
   
@@ -20,6 +21,11 @@ render() {
       <Route 
         exact path="/"
         element={<Main/>}
+      >
+      </Route>
+      <Route 
+        exact path="/blog"
+        element={<Blog/>}
       >
       </Route>
       <Route 

@@ -25,8 +25,8 @@ class FirstPage extends React.Component {
 
   render() {
     return (
-        <>
           <div  className="fullScreen"  >
+            <div className="background"></div>
           <div className="img">
             <img src={require("../img/MeAvatar.png")} alt="Avatar" title="Almost Yazan Alfarra"/>
           </div>
@@ -39,24 +39,25 @@ class FirstPage extends React.Component {
           </div>
           <div className="Scribble">
             <img src={require("../img/scribble.png")} alt="Scribble" title="Scribble"/>
-            <button className="getInTouchButton">Get in touch</button>
+            <a href='/contactMe' ><button className="getInTouchButton">Get in touch</button></a>
           </div>
-          </div>
+          
           <div id="On" className="handbook">
           <button className="handbook" onClick={this.handleOpen}><img className="handbook" src={require("../img/handbook.png")} alt="handbook" title="handbook"/>
             </button>
           </div>
           <div id="SOCIAL" className="socialInfo">
-            <a href="https://wa.me/962775818618"><img className="socialIcons" src={require("../img/whatsapp.png")} alt="whatsApp" title="whatsApp"/></a>
-            <a href="https://www.linkedin.com/in/yazan-alfarra/"><img className="socialIcons" src={require("../img/linkedin.png")} alt="linkedIn" title="linkedIn"/></a>
-            <a href="https://github.com/yazanismail1"><img className="socialIcons" src={require("../img/github.png")} alt="gitHub" title="gitHub"/></a>
+            <a href="https://github.com/yazanismail1" target="_blank"><img className="socialIcons" src={require("../img/github.png")} alt="gitHub" title="gitHub"/></a>
+            <a href="https://www.linkedin.com/in/yazan-alfarra/" target="_blank"><img className="socialIcons" src={require("../img/linkedin.png")} alt="linkedIn" title="linkedIn"/></a>
+            <a href="https://wa.me/962775818618" target="_blank"><img className="socialIcons" src={require("../img/whatsapp.png")} alt="whatsApp" title="whatsApp"/></a>
             <div className="verticalLine"></div>
           </div>
           <InfoModal 
           show={this.state.show}
           close={this.handleClose}
           />
-        </>
+          
+          </div>
     );
   }
 }

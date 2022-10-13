@@ -27,6 +27,20 @@
     margin: 0;
 }
 
+.background {
+    position: absolute;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100vh;
+    left:0;
+    top:0;
+    z-index: -1;
+    /* transform: rotate(-45deg); */
+    /* background-color: aquamarine;
+    overflow: hidden; */
+  background-image: -webkit-linear-gradient(-65deg, #A5C9CA 45%, #E7F6F2 55%, #ffffff 65%);
+}
+
 .img {
     width: 100%;
 }
@@ -42,15 +56,27 @@
 }
 
 .selfIntro h2 {
-    font-family: 'Merriweather', serif;
+    /* font-family: 'Merriweather', serif; */
     font-size: 16px;
     letter-spacing: 3px;
-    font-weight: 200;
-    color: #E7F6F2;
-    background-color: #395B64;
-    width: fit-content;
-    padding: 0 5% 0 1%;
+    font-weight: 700;
+    color: #395B64;
+    /* background-color: #395B64; */
+    width: 1%;
+    padding: 0 5% 0.5% 0%;
     margin-bottom: 15px;
+    text-shadow: #395B64 1px 0 10px;
+    border-bottom: 5px solid #395B64;
+    border-bottom-left-radius: 9px;
+    transition: 1s ease-in;
+    /* border-width: 3px; */
+    
+}
+
+.selfIntro h2:hover {
+    /* font-weight: 700; */
+    transition: 0.5s ease-in-out;
+    width: 15%;
 }
 
 .selfIntro p {
@@ -59,7 +85,7 @@
     margin: 0;
 }
 
-#name {
+/* #name {
     padding: 30px 0 8px;
     position: relative;
     z-index: 1;
@@ -93,7 +119,7 @@
     transform: skew(-12deg) translateX(-50%);
     background: hsl(182, 26%, 72%,75%);
     z-index: -1;
-  }
+  } */
 
 em {
     text-decoration: underline;
@@ -206,6 +232,7 @@ em {
         color: #2C3333;   
         padding: 0 15%; 
         margin: 0;
+        background-image: -webkit-linear-gradient(-60deg, #A5C9CA 35%, #E7F6F2 60%, #ffffff 65%);
     }
 
     .img {
@@ -219,17 +246,33 @@ em {
     }
 
     .selfIntro {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: auto;
+
         text-align: justify;
         padding-top: 0;
     }
     
     .selfIntro h2 {
-        font-family: 'Merriweather', serif;
+        /* font-family: 'Merriweather', serif; */
         font-size: 16px;
         letter-spacing: 3px;
-        font-weight: 200;
-        color: #E7F6F2;
-        background-color: #395B64;
+        font-weight: 700;
+        color: #395B64;
+        width: 1%;
+        padding: 0 5% 0.5% 0%;
+        margin-bottom: 15px;
+        text-shadow: #395B64 1px 0 10px;
+        border-bottom: 5px solid #395B64;
+        border-bottom-left-radius: 9px;
+        transition: 1s ease-in;
+    }
+
+    .selfIntro h2:hover {
+        transition: 0.5s ease-in-out;
+        width: 15%;
     }
     
     .selfIntro p {
@@ -304,4 +347,27 @@ em {
     
 
     
+}
+
+@media only screen and (max-width: 500px) {
+    #SOCIAL {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding: 0;
+        margin: 0;
+        left: 0;
+
+    }
+
+    .socialInfo {
+        position: relative;
+    }
+
+    .verticalLine {
+        visibility: hidden;
+    }
+
+
 }
