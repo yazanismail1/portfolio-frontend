@@ -11,7 +11,7 @@ class Blog extends React.Component{
     return(
         <div>
           <Header />
-          <Footer />
+          {/* <Footer /> */}
 
         </div>
     )

@@ -8,44 +8,19 @@ import '../Styles/Header.css'
 
 
 class Header extends React.Component {
-    constructor(props){
-        super(props);
-        this.state={
-          border:""
-        }
-        window.addEventListener('scroll', this.handleScroll);
-      }
-
-      handleScroll = () => {
-        if(window.scrollY >= 100){
-          this.setState({
-            border:"boarderYes"
-          })
-          console.log(this.state.backgroundColor)
-        }else{
-          this.setState({
-            border:""
-          })
-        }
-    
-      }
     
     render() {
       return (
-<Navbar id="navigation1" className="boarderYes" sticky="top" collapseOnSelect expand="lg">
-<Container>
-  <Navbar.Brand ><Link id="logo" style={{ textDecoration: 'none'}} to="/">Y | A</Link></Navbar.Brand>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse id="responsive-navbar-nav">
-  <Nav className="ml-auto justify-content-end" id="items" style={{ width: "100%" }}>
-    <Nav.Link ><Link id="navitems1" to="/">Home</Link></Nav.Link>
-    <Nav.Link ><Link id="navitems1" to="/aboutMe">About Me</Link></Nav.Link>
-    <Nav.Link ><Link id="navitems1" to="/myWork">My Work</Link></Nav.Link>
-    <Nav.Link ><Link id="navitems1" to="/blog">Blog</Link></Nav.Link>
-    <Nav.Link ><Link id="navitems1" to="/contactMe">Contact Me</Link></Nav.Link>
+<Navbar id="navigations">
+  <Navbar.Brand >
+    <Link className="navitems home" style={{ textDecoration: 'none'}} to="/"><img title="Home Page" src={require("../img/homepage.png")}/></Link>
+  </Navbar.Brand>
+
+  <Nav id="items">
+    <Nav.Link ><Link className="navitems aboutMe" to="/aboutMe"><img title="About Me" src={require("../img/user.png")}/></Link></Nav.Link>
+    <Nav.Link ><Link className="navitems" to="/myWork"><img title="My Work" src={require("../img/layer.png")}/></Link></Nav.Link>
+    <Nav.Link ><Link className="navitems contactMe" to="/contactMe"><img title="Contact Me" src={require("../img/user (1).png")}/></Link></Nav.Link>
   </Nav>
-    </Navbar.Collapse>
-</Container>
 </Navbar>
         )
     }

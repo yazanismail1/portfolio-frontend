@@ -11,7 +11,7 @@ class AboutMe extends React.Component{
     return(
         <div>
           <Header />
-          <Footer />
+          {/* <Footer /> */}
 
         </div>
     )
