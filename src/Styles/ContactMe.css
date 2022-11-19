@@ -35,13 +35,13 @@ label {
     padding-bottom: 10px;
 }
 
-input[type=text], textarea {
+input[type=text], input[type=email], textarea {
     width: 100%;
     border: None;
     border-radius: 5px;
 }
 
-input[type=text] {
+input[type=text], input[type=email] {
     height: 35px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -65,4 +65,11 @@ input[type=submit]:hover {
     background-color: #2C3333;
     color: white;
     transition: 0.5s;
+}
+
+.swal-button, .swal-button--confirm, .swal-button__loader, .swal-button:not([disabled]):hover{
+    background-color: #a6c9ca;
+    transform: none;
+    transition: none;
+    color: #2C3333
 }
