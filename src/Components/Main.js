@@ -20,11 +20,11 @@ class Main extends React.Component {
       })
     }
 
-    close = () => {
-      this.setState({
-        showNavigationModal:false
-      })
-    }
+    // close = () => {
+    //   this.setState({
+    //     showNavigationModal:false
+    //   })
+    // }
 
     handleClick = (e) => {
         if(e.key === "s" || e.key === "S") {

@@ -32,17 +32,17 @@ class Header extends React.Component {
     
     render() {
       return (
-<Navbar id="navigation1" className={this.state.border} sticky="top" collapseOnSelect expand="lg">
+<Navbar id="navigation1" className="boarderYes" sticky="top" collapseOnSelect expand="lg">
 <Container>
   <Navbar.Brand ><Link id="logo" style={{ textDecoration: 'none'}} to="/">Y | A</Link></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
   <Nav className="ml-auto justify-content-end" id="items" style={{ width: "100%" }}>
-    <Nav.Link ><Link id="navitems1" style={{ textDecoration: 'none', }} to="/">Home</Link></Nav.Link>
-    <Nav.Link ><Link id="navitems1" style={{ textDecoration: 'none', }} to="/aboutMe">About Me</Link></Nav.Link>
-    <Nav.Link ><Link id="navitems1" style={{ textDecoration: 'none', }} to="/myWork">My Work</Link></Nav.Link>
-    <Nav.Link ><Link id="navitems1" style={{ textDecoration: 'none', }} to="/blog">Blog</Link></Nav.Link>
-    <Nav.Link ><Link id="navitems1" style={{ textDecoration: 'none', }} to="/contactMe">Contact Me</Link></Nav.Link>
+    <Nav.Link ><Link id="navitems1" to="/">Home</Link></Nav.Link>
+    <Nav.Link ><Link id="navitems1" to="/aboutMe">About Me</Link></Nav.Link>
+    <Nav.Link ><Link id="navitems1" to="/myWork">My Work</Link></Nav.Link>
+    <Nav.Link ><Link id="navitems1" to="/blog">Blog</Link></Nav.Link>
+    <Nav.Link ><Link id="navitems1" to="/contactMe">Contact Me</Link></Nav.Link>
   </Nav>
     </Navbar.Collapse>
 </Container>
@@ -51,4 +51,4 @@ class Header extends React.Component {
     }
   }
   
-  export default Header;
+export default Header;
