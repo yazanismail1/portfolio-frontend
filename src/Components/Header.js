@@ -19,6 +19,7 @@ class Header extends React.Component {
   <Nav id="items">
     <Nav.Link ><Link className="navitems aboutMe" to="/aboutMe"><img title="About Me" src={require("../img/user.png")}/></Link></Nav.Link>
     <Nav.Link ><Link className="navitems" to="/myWork"><img title="My Work" src={require("../img/layer.png")}/></Link></Nav.Link>
+    <Nav.Link ><Link className="navitems" to="/blog"><img title="Blog" src={require("../img/blogger.png")}/></Link></Nav.Link>
     <Nav.Link ><Link className="navitems contactMe" to="/contactMe"><img title="Contact Me" src={require("../img/user (1).png")}/></Link></Nav.Link>
   </Nav>
 </Navbar>
