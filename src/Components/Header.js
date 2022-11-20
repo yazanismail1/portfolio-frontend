@@ -13,7 +13,7 @@ class Header extends React.Component {
       return (
 <Navbar id="navigations">
   <Navbar.Brand >
-    <Link className="navitems home" style={{ textDecoration: 'none'}} to="/"><img title="Home Page" src={require("../img/homepage.png")}/></Link>
+    <Link className="navitems home" to="/"><img title="Home Page" src={require("../img/homepage.png")}/></Link>
   </Navbar.Brand>
 
   <Nav id="items">
