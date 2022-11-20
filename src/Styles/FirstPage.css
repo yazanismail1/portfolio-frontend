@@ -251,7 +251,7 @@ em {
         flex-direction: column;
         align-items: flex-start;
         margin: auto;
-
+        margin-bottom: 5%;
         text-align: justify;
         padding-top: 0;
     }
@@ -279,6 +279,7 @@ em {
     .selfIntro p {
         line-height: 1.5;
         margin: 0;
+        
     }
 
     .getInTouchButton {
@@ -303,7 +304,7 @@ em {
     .Scribble .getInTouchButton {
         width: max-content;
         position:static;
-        margin: 3% 0;
+        margin: 5% 0;
         /* transform: rotateZ(-15deg); */
     }
 

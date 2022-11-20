@@ -55,7 +55,7 @@ class NavigationModal extends React.Component {
 
                 <Nav.Link id="navitems"><Link style={{ textDecoration: 'none', }} to="/contactMe">
             <strong className="titleTab">Contact Me | 📞</strong>
-                <img className="navigationTabsImg" src={require("../img/home.jpg")} alt="Contact Me" />
+                <img className="navigationTabsImg" src={require("../img/contactmepage.jpg")} alt="Contact Me" />
                 </Link></Nav.Link>
 
             
