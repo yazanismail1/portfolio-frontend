@@ -1,6 +1,8 @@
 import React from "react";
 import "../Styles/FirstPage.css";
 import InfoModal from "./InfoModal";
+import Nav from 'react-bootstrap/Nav';
+import { Link } from "react-router-dom";
 
 class FirstPage extends React.Component {
   constructor(props){
@@ -39,7 +41,8 @@ class FirstPage extends React.Component {
           </div>
           <div className="Scribble">
             <img src={require("../img/scribble.png")} alt="Scribble" title="Scribble"/>
-            <a href='/contactMe' ><button className="getInTouchButton">Get in touch</button></a>
+            {/* <a to="/contactMe"><button className="getInTouchButton" >Get in touch</button></a> */}
+            <Nav.Link ><Link className="getInTouchButton"  to="/contactMe">Get in touch</Link></Nav.Link>
           </div>
           
           <div id="On" className="handbook">
