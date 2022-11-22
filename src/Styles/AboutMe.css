@@ -112,8 +112,14 @@
 @media only screen and (max-width: 580px) {
     .AboutWrapper {
         margin-left: 57px;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 100%;
+        column-width: 100%;
+    }
+    .moreabout, .contactAbout, .ideaabout, .edu {
+        scale: 0.5;
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
     }
     .four {
         background-color: #395B64;
