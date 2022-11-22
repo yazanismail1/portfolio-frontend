@@ -1,0 +1,123 @@
+.AboutWrapper {
+    margin-left: 57px;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.yaz {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.one {
+    background-color: #2C3333;
+}
+
+.two {
+    background-color: #395B64;
+}
+
+.hoverLayer {
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 50vh;
+    z-index: -1;
+    text-align: center;
+}
+
+.hiddenLayer:hover .hoverLayer {
+    background-color:#E7F6F2;
+    width: 100%;
+    height: 50vh;
+    /* border: 1px solid #a6c9ca; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.aboutMeAvatar {
+    transform: rotateZ(-180deg);
+    height: 80%;
+}
+
+.contacticonz {
+    width: 10%;
+    padding: 7px;
+}
+
+.insideGrid {
+    display: grid;
+}
+
+.moreabout, .contactAbout, .ideaabout, .edu {
+    scale: 0.7;
+}
+
+.ideaabout {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.briefAboutMe {
+    padding: 0 10px;
+}
+
+.resume {
+    font-size: 25px;
+    color: #395B64;
+    text-decoration:line-through;
+    font-weight: 500;    
+}
+
+.resume:hover{
+    color:#2C3333;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 840px) {
+    .AboutWrapper {
+        margin-left: 57px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .aboutMeAvatar {
+        transform: rotateZ(-180deg);
+        height: 70%;
+    }
+    .four {
+        background-color: #2C3333;
+    }
+    
+    .three {
+        background-color: #395B64;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .AboutWrapper {
+        margin-left: 57px;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .four {
+        background-color: #395B64;
+    }
+    
+    .three {
+       
+        background-color: #2C3333;
+    }
+}
