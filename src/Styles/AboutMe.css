@@ -123,6 +123,8 @@
         scale: 0.4;
         -webkit-filter: invert(100%);
         filter: invert(100%);
+        width: auto;
+        height: auto;
     }
     .four {
         background-color: #395B64;
