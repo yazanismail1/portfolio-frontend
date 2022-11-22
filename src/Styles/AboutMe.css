@@ -116,8 +116,11 @@
         grid-template-columns: 100%;
         column-width: 100%;
     }
+    .aboutMeAvatar{
+        scale: 0.4;
+    }
     .moreabout, .contactAbout, .ideaabout, .edu {
-        scale: 0.5;
+        scale: 0.4;
         -webkit-filter: invert(100%);
         filter: invert(100%);
     }
