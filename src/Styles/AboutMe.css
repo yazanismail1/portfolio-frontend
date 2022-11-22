@@ -1,10 +1,150 @@
-.AboutWrapper {
+.grid-wrapper {
     margin-left: 57px;
     display: grid;
-    grid-template-columns: 33.3333% 33.3333% 33.3333%;
+    grid-template-columns: auto auto auto;
 }
 
-.box {
+.grid-box {
+    position: relative;
+    height: 50vh;
+}
+
+.inner-grid-box, .hidden-grid-box {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.inner-grid-box {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.hidden-grid-box{
+    z-index: -1;
+    text-align: center;
+    padding: 20px;
+}
+
+.hidden-grid-box a{
+    text-decoration: line-through;
+    color:#395B64;
+    font-weight: 700;
+    font-size: 32px;
+    transition: ease-in-out;
+    transition: 0.5s;
+}
+
+.hidden-grid-box a:hover{
+    text-decoration: none;
+    color:#2C3333;
+    font-weight: 700;
+    font-size: 32px;
+    transition: ease-in-out;
+    transition: 0.5s;
+}
+
+.grid-box:hover .hidden-grid-box {
+    z-index: 1;
+}
+
+.one {
+    background-color: #2C3333;
+}
+
+.two {
+    background-color: #395B64;
+}
+
+.three {
+    background-color: #E7F6F2;
+}
+
+.box-img-me {
+    scale: 0.6;
+    width: auto;
+    transform: rotateZ(-180deg);
+}
+
+.box-img {
+    scale: 0.6;
+    width: auto;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.contactme-grid{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contactme-grid a img{
+    width: 40px;
+}
+
+@media only screen and (max-width: 950px) {
+    .grid-wrapper {
+        margin-left: 57px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .four {
+        background-color: #395B64;
+    }
+
+    .five {
+        background-color: #2C3333;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .grid-wrapper {
+        margin-left: 57px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .four {
+        background-color: #2C3333;
+    }
+
+    .five {
+        background-color: #395B64;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .box {
     position: relative;
     width: 100%;
     height: 50vh;
@@ -164,4 +304,4 @@
     .insideGrid {
         display: grid;
     }
-}
+} */
