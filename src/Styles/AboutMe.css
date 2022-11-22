@@ -1,7 +1,7 @@
 .AboutWrapper {
     margin-left: 57px;
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 33.3333% 33.3333% 33.3333%;
 }
 
 .box {
@@ -39,7 +39,6 @@
     background-color:#E7F6F2;
     width: 100%;
     height: 50vh;
-    /* border: 1px solid #a6c9ca; */
     position: absolute;
     display: flex;
     justify-content: center;
@@ -49,7 +48,6 @@
 
 .aboutMeAvatar {
     transform: rotateZ(-180deg);
-    height: 80%;
 }
 
 .contacticonz {
@@ -61,8 +59,9 @@
     display: grid;
 }
 
-.moreabout, .contactAbout, .ideaabout, .edu {
-    scale: 0.7;
+.moreabout, .contactAbout, .ideaabout, .edu, .aboutMeAvatar {
+    scale: 0.5;
+
 }
 
 .ideaabout {
@@ -70,7 +69,7 @@
     filter: invert(100%);
 }
 
-.briefAboutMe {
+.briefAboutMe,.moreabout, .contactAbout, .ideaabout, .edu {
     padding: 0 10px;
 }
 
@@ -87,15 +86,19 @@
     font-weight: 700;
 }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 913px) {
     .AboutWrapper {
         margin-left: 57px;
         display: grid;
         grid-template-columns: 50% 50%;
     }
+    .moreabout, .contactAbout, .ideaabout, .edu {
+        scale: 0.5;
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
     .aboutMeAvatar {
         transform: rotateZ(-180deg);
-        height: 70%;
     }
     .four {
         background-color: #2C3333;
