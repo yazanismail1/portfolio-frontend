@@ -112,8 +112,8 @@
 @media only screen and (max-width: 580px) {
     .AboutWrapper {
         margin-left: 57px;
-        display: grid;
-        grid-template-columns: 100%;
+        display: flex;
+        flex-direction: column;
     }
     .four {
         background-color: #395B64;
