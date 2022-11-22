@@ -134,4 +134,34 @@
        
         background-color: #2C3333;
     }
+
+    .hoverLayer {
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 100%;
+        height: 50vh;
+        z-index: -1;
+        text-align: center;
+    }
+    
+    .hiddenLayer:hover .hoverLayer {
+        background-color:#E7F6F2;
+        width: 100%;
+        height: 50vh;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .contacticonz {
+        width: 20%;
+        padding: 7px;
+    }
+    
+    .insideGrid {
+        display: grid;
+    }
 }
