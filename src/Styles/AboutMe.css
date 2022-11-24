@@ -27,10 +27,10 @@
 .hidden-grid-box{
     z-index: -1;
     text-align: center;
-    padding: 20px;
+    padding: 10px; 
 }
 
-.hidden-grid-box a{
+.hidden-grid-box .resume{
     text-decoration: line-through;
     color:#395B64;
     font-weight: 700;
@@ -39,7 +39,7 @@
     transition: 0.5s;
 }
 
-.hidden-grid-box a:hover{
+.hidden-grid-box .resume:hover{
     text-decoration: none;
     color:#2C3333;
     font-weight: 700;

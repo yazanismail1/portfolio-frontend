@@ -1,0 +1,15 @@
+.blog-wrapper {
+    height: 100vh;
+    /* border: 1px solid red; */
+    margin-left: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.blog-wrapper img {
+    width: 150px;
+}

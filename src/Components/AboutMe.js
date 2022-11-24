@@ -32,7 +32,7 @@ class AboutMe extends React.Component{
                 <img className='box-img-me' src={require("../img/MeAvatar.png")} />
               </div>
               <div className='hidden-grid-box three'>
-                <h1>about me...</h1>
+                <h1>Hello, this is Yaz!</h1>
               </div>
             </div>
 
@@ -41,8 +41,7 @@ class AboutMe extends React.Component{
                 <img className='box-img' src={require("../img/confused.png")} />
               </div>
               <div className='hidden-grid-box three'>
-                <h1>Hello, this is Yaz!</h1>
-                <h4>I'm a <strong>Software Developer</strong>...</h4>
+                <h3>I'm a <strong>Software Developer</strong>...</h3>
               </div>
             </div>
 
@@ -60,7 +59,7 @@ class AboutMe extends React.Component{
                 <img className='box-img' src={require("../img/organization.png")} />
               </div>
               <div className='hidden-grid-box three'>
-                <a href= "https://docs.google.com/document/d/1GLvQnfT-UBWejEPTtOV1pisAZTkOh5S7QIAv_9t09kU/edit?usp=sharing" target="_blank">Résumé</a>
+                <a className='resume' href= "https://docs.google.com/document/d/1GLvQnfT-UBWejEPTtOV1pisAZTkOh5S7QIAv_9t09kU/edit?usp=sharing" target="_blank">Résumé</a>
               </div>
             </div>
 
@@ -69,7 +68,7 @@ class AboutMe extends React.Component{
                 <img className='box-img' src={require("../img/idea.png")} />
               </div>
               <div className='hidden-grid-box three'>
-                <h4>I'm currenty working on writing a <strong>blog</strong> to guide people and tell the story of my career shift.</h4>
+                <h4>I'm currenty enrolled in the Code Fellows Advanced Software Developement in Python Bootcamp.</h4>
               </div>
             </div>
 
